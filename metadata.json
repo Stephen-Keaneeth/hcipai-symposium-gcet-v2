@@ -1,0 +1,6 @@
+{
+  "name": "HCIPAI Symposium 2027 — GCET",
+  "description": "Official website for the HCIPAI Symposium 2027 (HCI for Interactive & Immersive Experience) hosted at Geethanjali College of Engineering and Technology (GCET), Telangana, India on March 18–19, 2027.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

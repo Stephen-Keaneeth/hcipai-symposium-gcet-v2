@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-plum: #6a4766;
+    --color-plum-dark: #4f334c;
+    --color-lavender: #a355ba;
+    --color-azure: #1b75bb;
+    --color-vivid-blue: #2d8cf2;
+    --color-vivid-blue-bright: #2d8dff;
+    --color-pastel-blue: #7cb3ed;
+    --color-pastel-blue-muted: #88b2df;
+    --color-light-blue: #dceaf8;
+    --color-surface-ivory: #fbfcfe;
+    --color-surface-tint: #f3f8fd;
+    --color-ink-black: #010101;
+    --color-ink-dark: #4e4e4e;
+    --color-ink-muted: #505050;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #010101;
+    background-color: #fbfcfe;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  h1, h2, h3, h4, .font-serif-display {
+    font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
+  }
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+.font-sans-body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/*
+ * Seamless edge-to-edge paisley texture that eliminates the top-right artboard cutout
+ * in website_banner-symposium_27__2__8122c4fd.png by anchoring to the continuous lower rows
+ * and scaling across 145% width with multiply blend mode.
+ */
+.paisley-watermark-layer {
+  background-image: url('/assets/aistudio/website_banner-symposium_27__2__8122c4fd.png');
+  background-size: 148% auto;
+  background-position: left bottom;
+  background-repeat: repeat-y;
+  mix-blend-mode: multiply;
+}
+
+.paisley-fade-mask {
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.75) 65%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.75) 65%, rgba(0, 0, 0, 0) 100%);
+}

@@ -1,0 +1,114 @@
+{
+  "sectionTitle": "Organizing Committee",
+  "sectionSubtitle": "Institutional leadership, symposium chairs, and XR Research Lab coordinators hosting HCIPAI Symposium 2027 at Geethanjali College of Engineering and Technology.",
+  "announcementNote": "Committee member rosters are maintained by GCET and the XR Research Lab. Unannounced individual appointments are marked TBA.",
+  "groups": [
+    {
+      "id": "patrons",
+      "category": "Patrons & Institutional Leadership",
+      "description": "Executive leadership and academic governance at Geethanjali College of Engineering and Technology (GCET).",
+      "displayOrder": 1
+    },
+    {
+      "id": "general-chairs",
+      "category": "Symposium General Chairs & Conveners",
+      "description": "Academic and program steering leads for HCIPAI Symposium 2027.",
+      "displayOrder": 2
+    },
+    {
+      "id": "xr-lab-committee",
+      "category": "XR Research Lab & Organizing Chairs",
+      "description": "Core organizing faculty and research leads from the AR/VR & XR Research Lab at GCET.",
+      "displayOrder": 3
+    },
+    {
+      "id": "track-coordinators",
+      "category": "Panel, Workshop & Interactive Zone Coordinators",
+      "description": "Coordinators overseeing panel discussions, hands-on workshops, and interactive demonstration zones.",
+      "displayOrder": 4
+    }
+  ],
+  "members": [
+    {
+      "id": "comm-1",
+      "name": "TBA",
+      "role": "Chief Patron",
+      "affiliation": "Geethanjali College of Engineering and Technology (GCET)",
+      "category": "Patrons & Institutional Leadership",
+      "image": "",
+      "displayOrder": 1
+    },
+    {
+      "id": "comm-2",
+      "name": "TBA",
+      "role": "Patron / Principal",
+      "affiliation": "Geethanjali College of Engineering and Technology (GCET)",
+      "category": "Patrons & Institutional Leadership",
+      "image": "",
+      "displayOrder": 2
+    },
+    {
+      "id": "comm-3",
+      "name": "TBA",
+      "role": "Symposium General Chair",
+      "affiliation": "HCIPAI & Geethanjali College of Engineering and Technology",
+      "category": "Symposium General Chairs & Conveners",
+      "image": "",
+      "displayOrder": 3
+    },
+    {
+      "id": "comm-4",
+      "name": "TBA",
+      "role": "Symposium Convener",
+      "affiliation": "Geethanjali College of Engineering and Technology (GCET)",
+      "category": "Symposium General Chairs & Conveners",
+      "image": "",
+      "displayOrder": 4
+    },
+    {
+      "id": "comm-5",
+      "name": "TBA",
+      "role": "XR Research Lab Lead & Organizing Secretary",
+      "affiliation": "XR Research Lab, GCET",
+      "category": "XR Research Lab & Organizing Chairs",
+      "image": "",
+      "displayOrder": 5
+    },
+    {
+      "id": "comm-6",
+      "name": "TBA",
+      "role": "Co-Convener & Research Coordinator",
+      "affiliation": "XR Research Lab, GCET",
+      "category": "XR Research Lab & Organizing Chairs",
+      "image": "",
+      "displayOrder": 6
+    },
+    {
+      "id": "comm-7",
+      "name": "TBA",
+      "role": "Panel Discussions Chair",
+      "affiliation": "Geethanjali College of Engineering and Technology (GCET)",
+      "category": "Panel, Workshop & Interactive Zone Coordinators",
+      "image": "",
+      "displayOrder": 7
+    },
+    {
+      "id": "comm-8",
+      "name": "TBA",
+      "role": "Workshops Chair",
+      "affiliation": "XR Research Lab, GCET",
+      "category": "Panel, Workshop & Interactive Zone Coordinators",
+      "image": "",
+      "displayOrder": 8
+    },
+    {
+      "id": "comm-9",
+      "name": "TBA",
+      "role": "Interactive Zones Coordinator",
+      "affiliation": "XR Research Lab, GCET",
+      "category": "Panel, Workshop & Interactive Zone Coordinators",
+      "image": "",
+      "displayOrder": 9
+    }
+  ]
+}

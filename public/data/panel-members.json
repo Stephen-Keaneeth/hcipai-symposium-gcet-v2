@@ -1,0 +1,67 @@
+{
+  "sectionTitle": "Panel Members",
+  "sectionSubtitle": "Distinguished voices from academia, research labs, and industry exploring HCI for Interactive & Immersive Experience.",
+  "announcementNote": "Official panelist roster and speaker biographies will be updated as confirmations conclude (TBA).",
+  "members": [
+    {
+      "id": "panel-1",
+      "name": "TBA",
+      "designation": "Keynote & Panel Speaker — TBA",
+      "affiliation": "Academic / Research Institution — TBA",
+      "biography": "Perspective on Human-Computer Interaction and interactive systems. Official speaker details TBA.",
+      "image": "",
+      "track": "Interactive Systems & HCI",
+      "displayOrder": 1
+    },
+    {
+      "id": "panel-2",
+      "name": "TBA",
+      "designation": "Distinguished Panelist — TBA",
+      "affiliation": "XR & Spatial Computing Research — TBA",
+      "biography": "Perspective on immersive AR/VR environments and spatial interaction paradigms. Official speaker details TBA.",
+      "image": "",
+      "track": "Immersive Experience & XR",
+      "displayOrder": 2
+    },
+    {
+      "id": "panel-3",
+      "name": "TBA",
+      "designation": "Distinguished Panelist — TBA",
+      "affiliation": "Human-Centered AI & Industry — TBA",
+      "biography": "Perspective on human-centered artificial intelligence and multimodal interfaces. Official speaker details TBA.",
+      "image": "",
+      "track": "Human-Centered AI",
+      "displayOrder": 3
+    },
+    {
+      "id": "panel-4",
+      "name": "TBA",
+      "designation": "Distinguished Panelist — TBA",
+      "affiliation": "Design & Cognitive Ergonomics — TBA",
+      "biography": "Perspective on inclusive design, accessibility, and multisensory user experience. Official speaker details TBA.",
+      "image": "",
+      "track": "Design & Accessibility",
+      "displayOrder": 4
+    },
+    {
+      "id": "panel-5",
+      "name": "TBA",
+      "designation": "Panel Moderator / Speaker — TBA",
+      "affiliation": "HCIPAI / Academic Partner — TBA",
+      "biography": "Synthesizing academic and practitioner viewpoints across the symposium theme: One Experience. Many Perspectives.",
+      "image": "",
+      "track": "Symposium Panel Dialogue",
+      "displayOrder": 5
+    },
+    {
+      "id": "panel-6",
+      "name": "TBA",
+      "designation": "Invited Workshop & Panel Lead — TBA",
+      "affiliation": "Industry / Research Lab — TBA",
+      "biography": "Leading hands-on methodologies for building and evaluating next-generation interactive experiences. Official details TBA.",
+      "image": "",
+      "track": "Workshops & Interactive Zones",
+      "displayOrder": 6
+    }
+  ]
+}

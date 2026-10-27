@@ -1,0 +1,115 @@
+{
+  "lastUpdated": "2027 Symposium Schedule — Official Timings & Speakers TBA",
+  "days": [
+    {
+      "id": "day-1",
+      "dayNumber": 1,
+      "date": "2027-03-18",
+      "displayDate": "March 18, 2027",
+      "label": "Day 1 — March 18, 2027",
+      "subtitle": "Inauguration, Panel Discussions & Immersive Interactive Zones",
+      "sessions": [
+        {
+          "id": "d1-s1",
+          "time": "TBA",
+          "title": "Registration & Welcome Assembly",
+          "category": "General",
+          "speaker": "TBA",
+          "venue": "GCET Campus — Hall TBA",
+          "status": "TBA",
+          "description": "Participant check-in and welcome kit distribution at Geethanjali College of Engineering and Technology."
+        },
+        {
+          "id": "d1-s2",
+          "time": "TBA",
+          "title": "Symposium Inauguration & Keynote Address",
+          "category": "Keynote",
+          "speaker": "TBA",
+          "venue": "GCET Main Auditorium — TBA",
+          "status": "TBA",
+          "description": "Opening address introducing the HCIPAI Symposium 2027 theme: One Experience. Many Perspectives."
+        },
+        {
+          "id": "d1-s3",
+          "time": "TBA",
+          "title": "Panel Discussion I: HCI for Interactive & Immersive Experience",
+          "category": "Panel Discussions",
+          "speaker": "Panel Members — TBA",
+          "venue": "TBA",
+          "status": "TBA",
+          "description": "Multi-perspective dialogue on human-computer interaction, spatial computing, and immersive environments."
+        },
+        {
+          "id": "d1-s4",
+          "time": "TBA",
+          "title": "Hands-On Workshop Session I",
+          "category": "Workshops",
+          "speaker": "Workshop Facilitators — TBA",
+          "venue": "XR Research Lab / Workshop Hall — TBA",
+          "status": "TBA",
+          "description": "Interactive technical and design workshop session. Specific topic and prerequisites TBA."
+        },
+        {
+          "id": "d1-s5",
+          "time": "TBA",
+          "title": "Interactive Zones & XR Research Lab Showcase",
+          "category": "Interactive Zones",
+          "speaker": "Demonstration Teams — TBA",
+          "venue": "Interactive Zone Arena — TBA",
+          "status": "TBA",
+          "description": "Live demonstrations, AR/VR prototypes, and experiential installations."
+        }
+      ]
+    },
+    {
+      "id": "day-2",
+      "dayNumber": 2,
+      "date": "2027-03-19",
+      "displayDate": "March 19, 2027",
+      "label": "Day 2 — March 19, 2027",
+      "subtitle": "Workshops, Panel Perspectives & Valedictory Session",
+      "sessions": [
+        {
+          "id": "d2-s1",
+          "time": "TBA",
+          "title": "Panel Discussion II: Emerging Perspectives in AI & Immersive HCI",
+          "category": "Panel Discussions",
+          "speaker": "Panel Members — TBA",
+          "venue": "TBA",
+          "status": "TBA",
+          "description": "Interdisciplinary panel exploring academic, industry, and design perspectives in human-centered AI and XR."
+        },
+        {
+          "id": "d2-s2",
+          "time": "TBA",
+          "title": "Hands-On Workshop Session II",
+          "category": "Workshops",
+          "speaker": "Workshop Facilitators — TBA",
+          "venue": "XR Research Lab / Workshop Hall — TBA",
+          "status": "TBA",
+          "description": "Practical workshop session for students, researchers, and practitioners. Topic details TBA."
+        },
+        {
+          "id": "d2-s3",
+          "time": "TBA",
+          "title": "Interactive Zones: Open Demonstrations & Poster Walkthroughs",
+          "category": "Interactive Zones",
+          "speaker": "Exhibitors & Researchers — TBA",
+          "venue": "Interactive Zone Arena — TBA",
+          "status": "TBA",
+          "description": "Continued hands-on access to interactive zones and research exhibits."
+        },
+        {
+          "id": "d2-s4",
+          "time": "TBA",
+          "title": "Valedictory Session & Symposium Synthesis",
+          "category": "General",
+          "speaker": "Organizing Committee — TBA",
+          "venue": "GCET Main Auditorium — TBA",
+          "status": "TBA",
+          "description": "Closing reflections and concluding remarks for HCIPAI Symposium 2027."
+        }
+      ]
+    }
+  ]
+}

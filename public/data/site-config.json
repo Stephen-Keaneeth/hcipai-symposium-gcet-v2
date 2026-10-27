@@ -1,0 +1,132 @@
+{
+  "event": {
+    "title": "HCIPAI Symposium 2027",
+    "subtitle": "HCI For Interactive & Immersive Experience",
+    "shortTitle": "HCIPAI 2027",
+    "dates": "March 18–19, 2027",
+    "startDate": "2027-03-18",
+    "endDate": "2027-03-19",
+    "year": "2027",
+    "theme": "One Experience. Many Perspectives.",
+    "pillars": [
+      "Panel Discussions",
+      "Workshops",
+      "Interactive Zones"
+    ],
+    "hostInstitution": "Geethanjali College of Engineering and Technology",
+    "hostShort": "GCET",
+    "hostTagline": "Epicenter For Transformation",
+    "accreditations": [
+      "NBA Accredited",
+      "NAAC Grade A+ Accredited University"
+    ],
+    "locationShort": "Hyderabad / Medchal-Malkajgiri District, Telangana, India"
+  },
+  "navigation": [
+    {
+      "id": "home",
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "id": "schedule",
+      "label": "Schedule",
+      "path": "/schedule"
+    },
+    {
+      "id": "panel-members",
+      "label": "Panel Members",
+      "path": "/panel-members"
+    },
+    {
+      "id": "organizing-committee",
+      "label": "Organizing Committee",
+      "path": "/organizing-committee"
+    },
+    {
+      "id": "venue-contact",
+      "label": "Venue & Contact",
+      "path": "/venue-contact"
+    }
+  ],
+  "assets": {
+    "bannerFull": "/assets/aistudio/BannerFinal_5fcf4c93.jpg",
+    "hcipaiLogo": "/assets/aistudio/HCIPAI_png_logo_1___1__b5467db3.png",
+    "gcetLogo": "/assets/aistudio/gcet-logo_b07866a4.png",
+    "campusPhoto": "/assets/aistudio/campus_469e4490.jpg",
+    "feesImage": "/assets/aistudio/FeesDetails_ba176dce.jpg",
+    "bannerTitleLockup": "/assets/aistudio/website_banner-symposium_27_bfc81df9.png",
+    "bannerThemeLockup": "/assets/aistudio/website_banner-symposium_27__1__0cdcb5e6.png",
+    "bannerSkyline": "/assets/aistudio/website_banner-symposium_27-1_59296501.png",
+    "paisleyPattern": "/assets/aistudio/website_banner-symposium_27__2__8122c4fd.png",
+    "kolamLeft": "/assets/aistudio/website_banner-symposium_27__3__7ba79b22.png",
+    "kolamRight": "/assets/aistudio/website_banner-symposium_27__4__656a5c2d.png"
+  },
+  "registrationFees": {
+    "heading": "Proposed Registration Fee",
+    "statusNote": "Register online via the official India HCI portal.",
+    "registrationUrl": "https://account.indiahci.org/auth",
+    "tiers": [
+      {
+        "id": "early-bird",
+        "category": "Early Bird",
+        "items": [
+          {
+            "participantType": "Students",
+            "fee": "₹1,000"
+          },
+          {
+            "participantType": "Professionals / Academicians",
+            "fee": "₹1,500"
+          }
+        ]
+      },
+      {
+        "id": "regular",
+        "category": "Regular",
+        "items": [
+          {
+            "participantType": "Students",
+            "fee": "₹1,500"
+          },
+          {
+            "participantType": "Professionals / Academicians",
+            "fee": "₹2,000"
+          }
+        ]
+      },
+      {
+        "id": "hcipai-members",
+        "category": "HCIPAI Members",
+        "items": [
+          {
+            "participantType": "HCIPAI Members (Flat Fee)",
+            "fee": "₹1,000"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "labName": "XR Research Lab",
+    "email": "xrresearchlab@gcet.edu.in",
+    "instagramHandle": "ar.vr.researchlab",
+    "instagramUrl": "https://www.instagram.com/ar.vr.researchlab/",
+    "institution": "Geethanjali College of Engineering and Technology",
+    "address": "Sy. No. 33 & 34, Cheeryal (V), Keesara (M), Medchal-Malkajgiri District (formerly Ranga Reddy District), Telangana, India — 501301",
+    "directionsUrl": "https://www.google.com/maps/search/?api=1&query=Geethanjali+College+of+Engineering+and+Technology+Cheeryal+Keesara+Telangana+501301"
+  },
+  "colors": {
+    "azure": "#1b75bb",
+    "pastelBlue": "#7cb3ed",
+    "pastelBlueSecondary": "#88b2df",
+    "vividBlue": "#2d8cf2",
+    "vividBlueSecondary": "#2d8dff",
+    "lavender": "#a355ba",
+    "lightBlue": "#dceaf8",
+    "darkGreyPrimary": "#505050",
+    "darkGreySecondary": "#4e4e4e",
+    "black": "#010101",
+    "plum": "#6a4766"
+  }
+}

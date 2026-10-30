@@ -223,8 +223,12 @@ export const SchedulePage: React.FC<SchedulePageProps> = ({
                             </div>
                             <div className="text-xs text-[#505050] pl-6">
                               <span>{session.category}</span>
-                              <span aria-hidden="true"> · </span>
-                              <span>Status: {session.status}</span>
+                              {day.id !== 'day-2' && session.status && (
+                                <>
+                                  <span aria-hidden="true"> · </span>
+                                  <span>Status: {session.status}</span>
+                                </>
+                              )}
                             </div>
                           </div>
 
@@ -233,9 +237,15 @@ export const SchedulePage: React.FC<SchedulePageProps> = ({
                             <h3 className="font-serif-display font-bold text-lg text-[#010101]">
                               {session.title}
                             </h3>
-                            <p className="text-sm text-[#4e4e4e] leading-relaxed">
-                              {session.description}
-                            </p>
+                            {session.tracks && (
+                              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#e8f1fb] border border-[#c3d9f5] text-xs font-medium text-[#1b75bb]">
+                                <span className="text-[#505050] font-semibold">Track:</span>
+                                <span>{session.tracks}</span>
+                              </div>
+                            )}
+                            <div className="text-sm text-[#4e4e4e] leading-relaxed">
+                              <p>{session.description}</p>
+                            </div>
                           </div>
 
                           {/* Speaker & Venue Column */}

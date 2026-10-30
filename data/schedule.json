@@ -66,48 +66,95 @@
       "dayNumber": 2,
       "date": "2027-03-19",
       "displayDate": "March 19, 2027",
-      "label": "Day 2 — March 19, 2027",
-      "subtitle": "Workshops, Panel Perspectives & Valedictory Session",
+      "label": "Day 2 \u2014 March 19, 2027",
+      "subtitle": "Hands-on HCI & Immersive Development",
       "sessions": [
         {
           "id": "d2-s1",
-          "time": "TBA",
-          "title": "Panel Discussion II: Emerging Perspectives in AI & Immersive HCI",
-          "category": "Panel Discussions",
-          "speaker": "Panel Members — TBA",
+          "time": "09:00 AM \u2013 09:15 AM",
+          "title": "Workshop Orientation",
+          "category": "General",
+          "speaker": "TBA",
           "venue": "TBA",
-          "status": "TBA",
-          "description": "Interdisciplinary panel exploring academic, industry, and design perspectives in human-centered AI and XR."
+          "tracks": "Track A: UI/UX & HCI | Track B: VR & Immersive Development",
+          "description": "Opening orientation session for all participants before splitting into parallel tracks."
         },
         {
           "id": "d2-s2",
-          "time": "TBA",
-          "title": "Hands-On Workshop Session II",
-          "category": "Workshops",
-          "speaker": "Workshop Facilitators — TBA",
-          "venue": "XR Research Lab / Workshop Hall — TBA",
-          "status": "TBA",
-          "description": "Practical workshop session for students, researchers, and practitioners. Topic details TBA."
+          "time": "09:15 AM \u2013 11:00 AM",
+          "title": "Panel Discussion",
+          "category": "Panel Discussions",
+          "speaker": "Panel Members \u2014 TBA",
+          "venue": "TBA",
+          "tracks": "Track A: UI/UX & HCI | Track B: VR & Immersive Development",
+          "description": "Parallel panel discussions running simultaneously across both tracks."
         },
         {
           "id": "d2-s3",
-          "time": "TBA",
-          "title": "Interactive Zones: Open Demonstrations & Poster Walkthroughs",
-          "category": "Interactive Zones",
-          "speaker": "Exhibitors & Researchers — TBA",
-          "venue": "Interactive Zone Arena — TBA",
-          "status": "TBA",
-          "description": "Continued hands-on access to interactive zones and research exhibits."
+          "time": "11:00 AM \u2013 11:15 AM",
+          "title": "Tea / Refreshment Break",
+          "category": "Break",
+          "speaker": "\u2014",
+          "venue": "Common Area",
+          "description": "Short refreshment break for all attendees."
         },
         {
           "id": "d2-s4",
-          "time": "TBA",
-          "title": "Valedictory Session & Symposium Synthesis",
+          "time": "11:15 AM \u2013 12:30 PM",
+          "title": "Interactive Session",
+          "category": "Interactive Zones",
+          "speaker": "Facilitators \u2014 TBA",
+          "venue": "TBA",
+          "tracks": "Track A: UI/UX & HCI | Track B: VR & Immersive Development",
+          "description": "Hands-on interactive sessions running in parallel across both tracks."
+        },
+        {
+          "id": "d2-s5",
+          "time": "12:30 PM \u2013 01:30 PM",
+          "title": "Lunch Break",
+          "category": "Break",
+          "speaker": "\u2014",
+          "venue": "Dining Area",
+          "description": "Lunch break for all attendees."
+        },
+        {
+          "id": "d2-s6",
+          "time": "01:30 PM \u2013 03:00 PM",
+          "title": "Workshop",
+          "category": "Workshops",
+          "speaker": "Workshop Facilitators \u2014 TBA",
+          "venue": "TBA",
+          "tracks": "Track A: UI/UX & HCI | Track B: VR & Immersive Development",
+          "description": "Parallel hands-on workshops with guided project development, prototype construction, and review."
+        },
+        {
+          "id": "d2-s7",
+          "time": "03:00 PM \u2013 03:15 PM",
+          "title": "Tea / Refreshment Break",
+          "category": "Break",
+          "speaker": "\u2014",
+          "venue": "Common Area",
+          "description": "Afternoon refreshment break for all attendees."
+        },
+        {
+          "id": "d2-s8",
+          "time": "03:15 PM \u2013 05:00 PM",
+          "title": "Prototype Demonstrations & Workshop Wrap-up",
+          "category": "Interactive Zones",
+          "speaker": "Demonstration Teams \u2014 TBA",
+          "venue": "TBA",
+          "tracks": "Track A: UI/UX & HCI | Track B: VR & Immersive Development",
+          "description": "Live prototype demonstrations followed by wrap-up and closing reflections for both tracks."
+        },
+        {
+          "id": "d2-s9",
+          "time": "05:00 PM \u2013 05:30 PM",
+          "title": "Networking & Stall Exploration",
           "category": "General",
-          "speaker": "Organizing Committee — TBA",
-          "venue": "GCET Main Auditorium — TBA",
-          "status": "TBA",
-          "description": "Closing reflections and concluding remarks for HCIPAI Symposium 2027."
+          "speaker": "\u2014",
+          "venue": "TBA",
+          "tracks": "Track A: UI/UX & HCI | Track B: VR & Immersive Development",
+          "description": "Open exhibition walkthrough, project showcase booths, and collaborative networking for all participants."
         }
       ]
     }

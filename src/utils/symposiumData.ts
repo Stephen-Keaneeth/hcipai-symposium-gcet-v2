@@ -84,6 +84,7 @@ export interface ScheduleSession {
   venue: string;
   status: string;
   description: string;
+  tracks?: string;
 }
 
 export interface ScheduleDay {
@@ -315,11 +316,12 @@ export function normalizeScheduleData(input: unknown): ScheduleData {
           category: cleanTextOrTba(s?.category, 'General'),
           speaker: cleanTextOrTba(s?.speaker, 'TBA'),
           venue: cleanTextOrTba(s?.venue, 'TBA'),
-          status: cleanTextOrTba(s?.status, 'TBA'),
+          status: cleanOptionalText(s?.status, ''),
           description: cleanTextOrTba(
             s?.description,
             'Session details will be announced (TBA).'
           ),
+          ...(s?.tracks ? { tracks: String(s.tracks) } : {}),
         }))
       : [];
 

@@ -63,13 +63,14 @@
     "kolamRight": "/assets/aistudio/website_banner-symposium_27__4__656a5c2d.png"
   },
   "registrationFees": {
-    "heading": "Proposed Registration Fee",
+    "heading": "`Registration Fee",
     "statusNote": "Register online via the official India HCI portal.",
     "registrationUrl": "https://account.indiahci.org/auth",
     "tiers": [
       {
         "id": "early-bird",
         "category": "Early Bird",
+        "deadline": "Registration open until 31st Jan",
         "items": [
           {
             "participantType": "Students",

@@ -398,9 +398,17 @@ export const HomePage: React.FC<HomePageProps> = ({
                 className="bg-white/95 backdrop-blur-xs border border-[#dceaf8] rounded-xl p-6 sm:p-7 flex flex-col justify-between shadow-2xs"
               >
                 <div>
-                  <h3 className="font-serif-display font-bold text-xl text-[#6a4766] pb-3 border-b border-[#dceaf8]">
-                    {tier.category}
-                  </h3>
+                  <div className="pb-3 border-b border-[#dceaf8]">
+                    <h3 className="font-serif-display font-bold text-xl text-[#6a4766]">
+                      {tier.category}
+                    </h3>
+                    {(tier.deadline || tier.id === 'early-bird') && (
+                      <div className="mt-2 flex items-center gap-1.5 text-sm font-normal text-[#777777]">
+                        <Calendar className="w-4 h-4 shrink-0 text-[#777777]" aria-hidden="true" />
+                        <span>{tier.deadline || 'Registration open until 31st Jan'}</span>
+                      </div>
+                    )}
+                  </div>
                   <dl className="mt-4 space-y-3.5">
                     {tier.items.map((item, idx) => (
                       <div

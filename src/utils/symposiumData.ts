@@ -24,6 +24,7 @@ export interface FeeItem {
 export interface FeeTier {
   id: string;
   category: string;
+  deadline?: string;
   items: FeeItem[];
 }
 
@@ -278,6 +279,7 @@ export function normalizeSiteConfig(input: unknown): SiteConfig {
         ? obj.registrationFees.tiers.map((tier: any, idx: number) => ({
             id: cleanTextOrTba(tier?.id, `tier-${idx + 1}`),
             category: cleanTextOrTba(tier?.category, 'TBA'),
+            ...(tier?.deadline ? { deadline: String(tier.deadline).trim() } : {}),
             items: Array.isArray(tier?.items)
               ? tier.items.map((item: any) => ({
                   participantType: cleanTextOrTba(item?.participantType, 'TBA'),

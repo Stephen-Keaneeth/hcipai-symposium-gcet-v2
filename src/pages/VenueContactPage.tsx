@@ -223,6 +223,12 @@ export const VenueContactPage: React.FC<VenueContactPageProps> = ({
                       <h3 className="font-semibold text-[#6a4766]">
                         {tier.category}
                       </h3>
+                      {(tier.deadline || tier.id === 'early-bird') && (
+                        <div className="flex items-center gap-1.5 text-xs font-normal text-[#777777]">
+                          <Calendar className="w-3.5 h-3.5 shrink-0 text-[#777777]" aria-hidden="true" />
+                          <span>{tier.deadline || 'Registration open until 31st Jan'}</span>
+                        </div>
+                      )}
                       {tier.items.map((item, idx) => (
                         <div
                           key={idx}

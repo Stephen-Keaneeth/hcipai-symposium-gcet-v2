@@ -86,6 +86,7 @@ export interface ScheduleSession {
   venue?: string;
   status?: string;
   description: string;
+  tracks?: string;
 }
 
 export interface ScheduleDay {
@@ -312,15 +313,18 @@ export function normalizeScheduleData(input: unknown): ScheduleData {
     const sessions: ScheduleSession[] = Array.isArray(day?.sessions)
       ? day.sessions.map((s: any, sIdx: number) => {
           const loc = cleanOptionalText(s?.location || s?.venue, '');
+          const hasValidLocation = loc.length > 0 && loc.toUpperCase() !== 'TBA';
+          const trackVal = cleanOptionalText(s?.track || s?.tracks, '');
           return {
             id: cleanTextOrTba(s?.id, `day-${dIdx + 1}-s-${sIdx + 1}`),
             time: cleanTextOrTba(s?.time, 'TBA'),
             title: cleanTextOrTba(s?.title, 'Session Title TBA'),
             category: cleanTextOrTba(s?.category, 'General'),
-            track: cleanOptionalText(s?.track, ''),
+            track: trackVal.length > 0 ? trackVal : undefined,
+            tracks: trackVal.length > 0 ? trackVal : undefined,
             speaker: cleanTextOrTba(s?.speaker, 'TBA'),
-            location: loc.length > 0 ? loc : undefined,
-            venue: loc.length > 0 ? loc : undefined,
+            location: hasValidLocation ? loc : undefined,
+            venue: hasValidLocation ? loc : undefined,
             status: cleanOptionalText(s?.status, ''),
             description: cleanTextOrTba(
               s?.description,

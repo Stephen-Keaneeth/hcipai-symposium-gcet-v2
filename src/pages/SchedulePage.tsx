@@ -207,6 +207,7 @@ export const SchedulePage: React.FC<SchedulePageProps> = ({
                     <div className="divide-y divide-[#dceaf8]">
                       {filteredSessions.map((session) => {
                         const sessionLocation = session.location || session.venue;
+                        const sessionTrack = session.track || session.tracks;
 
                         return (
                           <article
@@ -225,7 +226,7 @@ export const SchedulePage: React.FC<SchedulePageProps> = ({
                               <div className="text-xs text-[#505050] pl-6">
                                 <span>{session.category}</span>
                               </div>
-                              {sessionLocation && sessionLocation.trim() !== '' && (
+                              {sessionLocation && sessionLocation.trim() !== '' && sessionLocation.trim().toUpperCase() !== 'TBA' && (
                                 <div className="flex items-start gap-1.5 text-xs text-[#1b75bb] pl-6 font-medium">
                                   <MapPin
                                     className="w-3.5 h-3.5 shrink-0 mt-0.5 text-[#1b75bb]"
@@ -247,10 +248,10 @@ export const SchedulePage: React.FC<SchedulePageProps> = ({
                               <h3 className="font-serif-display font-bold text-lg text-[#010101]">
                                 {session.title}
                               </h3>
-                              {session.track && session.track !== '—' && (
-                                <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-xs font-semibold bg-[#e8f1fa] text-[#1b75bb] border border-[#cbe1f5]">
-                                  <span className="text-[#505050] font-normal">Track:</span>
-                                  <span>{session.track}</span>
+                              {sessionTrack && sessionTrack !== '—' && (
+                                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#e8f1fa] border border-[#cbe1f5] text-xs font-medium text-[#1b75bb]">
+                                  <span className="text-[#505050] font-semibold">Track:</span>
+                                  <span>{sessionTrack}</span>
                                 </div>
                               )}
                               <p className="text-sm text-[#4e4e4e] leading-relaxed">

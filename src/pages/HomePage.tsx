@@ -478,7 +478,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <strong>Campus Address:</strong> {siteConfig.contact.address}
               </p>
 
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-[#4e4e4e]">
+              {/* <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-[#4e4e4e]">
                 <span className="inline-flex items-center gap-2">
                   <Mail className="w-4 h-4 text-[#6a4766]" aria-hidden="true" />
                   <a
@@ -500,9 +500,9 @@ export const HomePage: React.FC<HomePageProps> = ({
                     @{siteConfig.contact.instagramHandle}
                   </a>
                 </span>
-              </div>
+              </div> */}
 
-              <div className="pt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {/* <div className="pt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <a
                   href="/organizing-committee"
                   onClick={(e) =>
@@ -534,7 +534,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     aria-hidden="true"
                   />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import {
   ExternalLink,
   Calendar,
   Navigation,
+  Instagram,
 } from 'lucide-react';
 import { SiteConfig } from '../utils/symposiumData';
 import { PageHero } from '../components/PageHero';
@@ -163,7 +164,7 @@ export const VenueContactPage: React.FC<VenueContactPageProps> = ({
                   {/* Instagram Link */}
                   <div className="flex items-start gap-3.5">
                     <div className="w-10 h-10 rounded-md bg-[#dceaf8]/60 flex items-center justify-center text-[#a355ba] shrink-0">
-                      <ExternalLink className="w-5 h-5" aria-hidden="true" />
+                      <Instagram className="w-5 h-5" aria-hidden="true" />
                     </div>
                     <div className="min-w-0 space-y-1">
                       <h3 className="text-xs font-semibold uppercase tracking-wider text-[#505050]">

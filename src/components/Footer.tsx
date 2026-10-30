@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, ExternalLink } from 'lucide-react';
+import { Mail, MapPin, ExternalLink, Instagram } from 'lucide-react';
 import { NavItem, RouteId, SiteConfig } from '../utils/symposiumData';
 
 interface FooterProps {
@@ -145,16 +145,19 @@ export const Footer: React.FC<FooterProps> = ({
                   className="w-4 h-4 text-[#6a4766] shrink-0"
                   aria-hidden="true"
                 />
-                <a
-                  href={`mailto:${siteConfig.contact.email}`}
-                  className="text-[#1b75bb] hover:text-[#6a4766] font-medium underline underline-offset-4 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1b75bb]"
-                >
-                  {siteConfig.contact.email}
-                </a>
+                <span>
+                  Email:{' '}
+                  <a
+                    href={`mailto:${siteConfig.contact.email}`}
+                    className="text-[#1b75bb] hover:text-[#6a4766] font-medium underline underline-offset-4 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1b75bb]"
+                  >
+                    {siteConfig.contact.email}
+                  </a>
+                </span>
               </p>
 
               <p className="flex items-center gap-2.5">
-                <ExternalLink
+                <Instagram
                   className="w-4 h-4 text-[#a355ba] shrink-0"
                   aria-hidden="true"
                 />

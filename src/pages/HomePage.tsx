@@ -6,7 +6,6 @@ import {
   Users,
   Layers,
   Sparkles,
-  Mail,
   ExternalLink,
 } from 'lucide-react';
 import { RouteId, SiteConfig } from '../utils/symposiumData';
@@ -523,64 +522,6 @@ export const HomePage: React.FC<HomePageProps> = ({
               <p className="text-sm sm:text-base text-[#4e4e4e] leading-relaxed">
                 <strong>Campus Address:</strong> {siteConfig.contact.address}
               </p>
-
-              {/* <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-[#4e4e4e]">
-                <span className="inline-flex items-center gap-2">
-                  <Mail className="w-4 h-4 text-[#6a4766]" aria-hidden="true" />
-                  <a
-                    href={`mailto:${siteConfig.contact.email}`}
-                    className="text-[#1b75bb] hover:text-[#6a4766] font-medium underline underline-offset-4"
-                  >
-                    {siteConfig.contact.email}
-                  </a>
-                </span>
-                <span>·</span>
-                <span>
-                  Instagram:{' '}
-                  <a
-                    href={siteConfig.contact.instagramUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#1b75bb] hover:text-[#6a4766] font-medium underline underline-offset-4"
-                  >
-                    @{siteConfig.contact.instagramHandle}
-                  </a>
-                </span>
-              </div> */}
-
-              {/* <div className="pt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <a
-                  href="/organizing-committee"
-                  onClick={(e) =>
-                    handleRouteLink(
-                      e,
-                      'organizing-committee',
-                      '/organizing-committee'
-                    )
-                  }
-                  className="flex items-center justify-between px-4 py-3.5 rounded-lg border border-[#dceaf8] bg-[#f3f8fd]/60 hover:bg-[#dceaf8]/50 text-sm font-semibold text-[#010101] transition-colors"
-                >
-                  <span>Organizing Committee</span>
-                  <ArrowRight
-                    className="w-4 h-4 text-[#6a4766]"
-                    aria-hidden="true"
-                  />
-                </a>
-
-                <a
-                  href="/venue-contact"
-                  onClick={(e) =>
-                    handleRouteLink(e, 'venue-contact', '/venue-contact')
-                  }
-                  className="flex items-center justify-between px-4 py-3.5 rounded-lg border border-[#dceaf8] bg-[#f3f8fd]/60 hover:bg-[#dceaf8]/50 text-sm font-semibold text-[#010101] transition-colors"
-                >
-                  <span>Venue & Contact Details</span>
-                  <ArrowRight
-                    className="w-4 h-4 text-[#1b75bb]"
-                    aria-hidden="true"
-                  />
-                </a>
-              </div> */}
             </div>
           </div>
         </div>

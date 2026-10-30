@@ -89,7 +89,7 @@ export const OrganizingCommitteePage: React.FC<
                 loading="lazy"
                 className="h-10 w-auto object-contain"
               />
-              <a
+              {/* <a
                 href={registrationUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -97,7 +97,7 @@ export const OrganizingCommitteePage: React.FC<
               >
                 <span>Register Now</span>
                 <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
-              </a>
+              </a> */}
             </div>
           </div>
 

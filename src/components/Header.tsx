@@ -36,14 +36,14 @@ const EXPLORE_ROUTES: {
     id: 'organizing-committee',
     label: 'Organizing Committee',
     path: '/organizing-committee',
-    subtitle: 'GCET & XR Research Lab leadership',
+    subtitle: 'GCET & AR/VR Research Lab leadership',
     icon: ShieldCheck,
   },
   {
     id: 'venue-contact',
     label: 'Venue & Contact',
     path: '/venue-contact',
-    subtitle: 'Campus address, directions & XR Lab inquiries',
+    subtitle: 'Campus address, directions & AR/VR Lab inquiries',
     icon: MapPin,
   },
 ];

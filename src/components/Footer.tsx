@@ -121,10 +121,10 @@ export const Footer: React.FC<FooterProps> = ({
             </ul>
           </div>
 
-          {/* Col 3: Official Venue & XR Lab Contact */}
+          {/* Col 3: Official Venue & AR/VR Lab Contact */}
           <div className="md:col-span-4 space-y-3">
             <h2 className="font-serif-display font-semibold text-base text-[#010101] tracking-wide">
-              Venue & XR Research Lab Contact
+              Venue & AR/VR Research Lab Contact
             </h2>
             <div className="space-y-2.5 text-sm text-[#4e4e4e]">
               <p className="flex items-start gap-2.5">

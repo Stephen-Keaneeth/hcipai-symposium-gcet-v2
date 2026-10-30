@@ -49,7 +49,7 @@ export const PanelMembersPage: React.FC<PanelMembersPageProps> = ({
 
         <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 space-y-10">
           {/* Announcement Banner */}
-          <div className="border-l-4 border-[#1b75bb] bg-[#f3f8fd]/90 backdrop-blur-[2px] px-5 py-4 text-sm text-[#4e4e4e] flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-r-lg">
+          {/* <div className="border-l-4 border-[#1b75bb] bg-[#f3f8fd]/90 backdrop-blur-[2px] px-5 py-4 text-sm text-[#4e4e4e] flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-r-lg">
             <div>
               <strong className="font-semibold text-[#010101]">
                 Speaker Roster Update:
@@ -70,7 +70,7 @@ export const PanelMembersPage: React.FC<PanelMembersPageProps> = ({
                 <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
               </a>
             </div>
-          </div>
+          </div> */}
 
           {/* Profile Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-8">

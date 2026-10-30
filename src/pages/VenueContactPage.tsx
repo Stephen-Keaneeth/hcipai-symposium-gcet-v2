@@ -147,7 +147,7 @@ export const VenueContactPage: React.FC<VenueContactPageProps> = ({
                     </div>
                     <div className="min-w-0 space-y-1">
                       <h3 className="text-xs font-semibold uppercase tracking-wider text-[#505050]">
-                        XR Research Lab Email
+                        AR/VR Research Lab Email
                       </h3>
                       <a
                         href={`mailto:${siteConfig.contact.email}`}
@@ -168,7 +168,7 @@ export const VenueContactPage: React.FC<VenueContactPageProps> = ({
                     </div>
                     <div className="min-w-0 space-y-1">
                       <h3 className="text-xs font-semibold uppercase tracking-wider text-[#505050]">
-                        XR Research Lab Instagram
+                        AR/VR Research Lab Instagram
                       </h3>
                       <a
                         href={siteConfig.contact.instagramUrl}
@@ -209,7 +209,7 @@ export const VenueContactPage: React.FC<VenueContactPageProps> = ({
               </div>
 
               {/* Proposed Registration Fee Card & Register Now CTA */}
-              <div className="bg-[#f3f8fd]/95 border border-[#dceaf8] rounded-lg p-6 space-y-4">
+              {/* <div className="bg-[#f3f8fd]/95 border border-[#dceaf8] rounded-lg p-6 space-y-4">
                 <div className="flex items-center justify-between gap-2">
                   <h2 className="font-serif-display font-bold text-xl text-[#010101]">
                     {siteConfig.registrationFees.heading}
@@ -253,7 +253,7 @@ export const VenueContactPage: React.FC<VenueContactPageProps> = ({
                     <ExternalLink className="w-4 h-4" aria-hidden="true" />
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

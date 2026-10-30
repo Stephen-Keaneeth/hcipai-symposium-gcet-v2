@@ -375,7 +375,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   </h3>
                   <p className="text-sm text-[#4e4e4e] leading-relaxed">
                     Live AR/VR demonstrations, research prototypes, and
-                    experiential setups curated with the XR Research Lab at GCET.
+                    experiential setups curated with the AR/VR Research Lab at GCET.
                   </p>
                 </div>
                 <div className="mt-5 pt-3 border-t border-[#dceaf8]/70">
@@ -386,7 +386,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     }
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1b75bb] hover:text-[#6a4766] transition-colors"
                   >
-                    <span>XR Research Lab Info</span>
+                    <span>AR/VR Research Lab Info</span>
                     <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
                   </a>
                 </div>

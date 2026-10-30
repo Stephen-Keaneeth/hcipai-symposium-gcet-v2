@@ -63,7 +63,7 @@
     "kolamRight": "/assets/aistudio/website_banner-symposium_27__4__656a5c2d.png"
   },
   "registrationFees": {
-    "heading": "`Registration Fee",
+    "heading": "Registration Fee (GST Exclusive)",
     "statusNote": "Register online via the official India HCI portal.",
     "registrationUrl": "https://account.indiahci.org/auth",
     "tiers": [

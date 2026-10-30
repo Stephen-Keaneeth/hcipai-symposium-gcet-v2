@@ -1,4 +1,4 @@
-{
+﻿{
   "lastUpdated": "2027 Symposium Schedule — Official Timings & Speakers TBA",
   "days": [
     {
@@ -43,10 +43,9 @@
           "id": "d1-s4",
           "time": "10:45 AM – 11:00 AM",
           "title": "Tea / Refreshment Break",
-          "category": "General",
-          "track": "—",
+          "category": "Break",
           "speaker": "—",
-          "status": "Confirmed",
+          "venue": "Common Area",
           "description": "Morning tea, refreshments, and informal networking break."
         },
         {
@@ -73,10 +72,9 @@
           "id": "d1-s7",
           "time": "12:30 PM – 01:30 PM",
           "title": "Lunch Break",
-          "category": "General",
-          "track": "—",
+          "category": "Break",
           "speaker": "—",
-          "status": "Confirmed",
+          "venue": "Dining Area",
           "description": "Networking lunch and delegate discussions."
         },
         {
@@ -93,10 +91,9 @@
           "id": "d1-s9",
           "time": "03:00 PM – 03:15 PM",
           "title": "Tea / Refreshment Break",
-          "category": "General",
-          "track": "—",
+          "category": "Break",
           "speaker": "—",
-          "status": "Confirmed",
+          "venue": "Common Area",
           "description": "Afternoon refreshment break."
         },
         {

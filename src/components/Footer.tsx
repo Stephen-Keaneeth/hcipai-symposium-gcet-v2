@@ -81,7 +81,7 @@ export const Footer: React.FC<FooterProps> = ({
               </p>
             </div>
 
-            <div className="pt-2">
+            {/* <div className="pt-2">
               <a
                 href={registrationUrl}
                 target="_blank"
@@ -91,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({
                 <span>Register Now</span>
                 <ExternalLink className="w-4 h-4" aria-hidden="true" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Col 2: Symposium Pages */}
@@ -108,11 +108,10 @@ export const Footer: React.FC<FooterProps> = ({
                       href={item.path}
                       onClick={(e) => handleNavClick(e, item)}
                       aria-current={isActive ? 'page' : undefined}
-                      className={`inline-block text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1b75bb] rounded-sm ${
-                        isActive
+                      className={`inline-block text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1b75bb] rounded-sm ${isActive
                           ? 'text-[#6a4766] font-semibold underline underline-offset-4'
                           : 'text-[#4e4e4e] hover:text-[#1b75bb]'
-                      }`}
+                        }`}
                     >
                       {item.label}
                     </a>

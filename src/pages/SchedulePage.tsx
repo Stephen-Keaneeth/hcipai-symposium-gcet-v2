@@ -56,7 +56,7 @@ export const SchedulePage: React.FC<SchedulePageProps> = ({
           className="pointer-events-none select-none absolute inset-0 paisley-watermark-layer opacity-20"
         />
         <img
-          src={siteConfig.assets.skylineIllustration}
+          src={siteConfig.assets.bannerSkyline}
           alt=""
           aria-hidden="true"
           className="pointer-events-none select-none absolute bottom-0 left-1/2 -translate-x-1/2 w-[95%] max-w-[1280px] h-auto object-contain mix-blend-multiply opacity-12"

@@ -1,11 +1,47 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
+import fs from 'fs';
 import path from 'path';
-import {defineConfig} from 'vite';
+import {defineConfig, Plugin} from 'vite';
+
+function syncDataFilesPlugin(): Plugin {
+  const sync = () => {
+    try {
+      const srcDir = path.resolve(import.meta.dirname, 'src/data');
+      const publicDir = path.resolve(import.meta.dirname, 'public/data');
+      const rootDataDir = path.resolve(import.meta.dirname, 'data');
+      if (fs.existsSync(srcDir)) {
+        if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir, { recursive: true });
+        if (!fs.existsSync(rootDataDir)) fs.mkdirSync(rootDataDir, { recursive: true });
+        const files = fs.readdirSync(srcDir);
+        for (const file of files) {
+          if (file.endsWith('.json')) {
+            fs.copyFileSync(path.join(srcDir, file), path.join(publicDir, file));
+            fs.copyFileSync(path.join(srcDir, file), path.join(rootDataDir, file));
+          }
+        }
+      }
+    } catch (err) {
+      console.warn('Auto-sync data failed:', err);
+    }
+  };
+
+  return {
+    name: 'sync-data-files',
+    buildStart() {
+      sync();
+    },
+    handleHotUpdate({ file }) {
+      if (file.includes('data') && file.endsWith('.json')) {
+        sync();
+      }
+    },
+  };
+}
 
 export default defineConfig(() => {
   return {
-    plugins: [react(), tailwindcss()],
+    plugins: [react(), tailwindcss(), syncDataFilesPlugin()],
     resolve: {
       alias: {
         '@': path.resolve(import.meta.dirname, '.'),

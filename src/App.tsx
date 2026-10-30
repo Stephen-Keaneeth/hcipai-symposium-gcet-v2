@@ -6,15 +6,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import {
   RouteId,
-  SiteConfig,
-  ScheduleData,
-  PanelMembersData,
-  CommitteeData,
   initialSymposiumBundle,
-  normalizeSiteConfig,
-  normalizeScheduleData,
-  normalizePanelMembersData,
-  normalizeCommitteeData,
   resolveRouteFromPath,
   getPathForRoute,
 } from './utils/symposiumData';
@@ -36,60 +28,12 @@ export default function App() {
   );
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 
-  const [siteConfig, setSiteConfig] = useState<SiteConfig>(
-    initialSymposiumBundle.siteConfig
-  );
-  const [scheduleData, setScheduleData] = useState<ScheduleData>(
-    initialSymposiumBundle.schedule
-  );
-  const [panelData, setPanelData] = useState<PanelMembersData>(
-    initialSymposiumBundle.panelMembers
-  );
-  const [committeeData, setCommitteeData] = useState<CommitteeData>(
-    initialSymposiumBundle.committee
-  );
-
-  // Fetch live JSON files from /data/*.json on load so edits to JSON files reflect after reload
-  useEffect(() => {
-    let isMounted = true;
-
-    async function loadLiveJsonData() {
-      try {
-        const [cfgRes, schedRes, panelRes, commRes] = await Promise.allSettled([
-          fetch('/data/site-config.json', { cache: 'no-store' }),
-          fetch('/data/schedule.json', { cache: 'no-store' }),
-          fetch('/data/panel-members.json', { cache: 'no-store' }),
-          fetch('/data/committee.json', { cache: 'no-store' }),
-        ]);
-
-        if (!isMounted) return;
-
-        if (cfgRes.status === 'fulfilled' && cfgRes.value.ok) {
-          const json = await cfgRes.value.json();
-          if (isMounted) setSiteConfig(normalizeSiteConfig(json));
-        }
-        if (schedRes.status === 'fulfilled' && schedRes.value.ok) {
-          const json = await schedRes.value.json();
-          if (isMounted) setScheduleData(normalizeScheduleData(json));
-        }
-        if (panelRes.status === 'fulfilled' && panelRes.value.ok) {
-          const json = await panelRes.value.json();
-          if (isMounted) setPanelData(normalizePanelMembersData(json));
-        }
-        if (commRes.status === 'fulfilled' && commRes.value.ok) {
-          const json = await commRes.value.json();
-          if (isMounted) setCommitteeData(normalizeCommitteeData(json));
-        }
-      } catch {
-        // Fallback to bundled JSON data if network fetch is unavailable
-      }
-    }
-
-    loadLiveJsonData();
-    return () => {
-      isMounted = false;
-    };
-  }, []);
+  const {
+    siteConfig,
+    schedule: scheduleData,
+    panelMembers: panelData,
+    committee: committeeData,
+  } = initialSymposiumBundle;
 
   // Sync browser back/forward navigation
   useEffect(() => {

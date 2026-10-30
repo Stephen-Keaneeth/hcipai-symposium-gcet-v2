@@ -41,7 +41,7 @@ export const PanelMembersPage: React.FC<PanelMembersPageProps> = ({
           className="pointer-events-none select-none absolute top-20 -left-10 w-64 h-auto object-contain mix-blend-multiply opacity-12"
         />
         <img
-          src={siteConfig.assets.skylineIllustration}
+          src={siteConfig.assets.bannerSkyline}
           alt=""
           aria-hidden="true"
           className="pointer-events-none select-none absolute bottom-0 left-1/2 -translate-x-1/2 w-[95%] max-w-[1280px] h-auto object-contain mix-blend-multiply opacity-15"

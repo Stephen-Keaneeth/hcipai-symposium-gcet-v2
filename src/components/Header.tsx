@@ -150,7 +150,11 @@ export const Header: React.FC<HeaderProps> = ({
     >
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 h-20 flex items-center justify-between gap-4">
         {/* Left: Full Institutional & Symposium Brand Lockup */}
-        <div className="flex items-center gap-4 sm:gap-6 min-w-0">
+        <div
+          className={`flex items-center gap-4 sm:gap-6 min-w-0 transition-opacity duration-300 ${
+            isHomeTop ? 'opacity-0 pointer-events-none' : 'opacity-100'
+          }`}
+        >
           <a
             href="/"
             onClick={handleLogoClick}

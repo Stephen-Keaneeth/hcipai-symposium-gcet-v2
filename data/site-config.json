@@ -60,7 +60,11 @@
     "bannerSkyline": "/assets/aistudio/website_banner-symposium_27-1_59296501.png",
     "paisleyPattern": "/assets/aistudio/website_banner-symposium_27__2__8122c4fd.png",
     "kolamLeft": "/assets/aistudio/website_banner-symposium_27__3__7ba79b22.png",
-    "kolamRight": "/assets/aistudio/website_banner-symposium_27__4__656a5c2d.png"
+    "kolamRight": "/assets/aistudio/website_banner-symposium_27__4__656a5c2d.png",
+    "bannerHcipaiLogo": "/assets/aistudio/hcipailogo.png",
+    "bannerGcetLogo": "/assets/aistudio/gcetlogo.png",
+    "bannerNbaLogo": "/assets/aistudio/nbalogo.png",
+    "bannerNaacLogo": "/assets/aistudio/naaclogo.png"
   },
   "registrationFees": {
     "heading": "Registration Fee (GST Exclusive)",

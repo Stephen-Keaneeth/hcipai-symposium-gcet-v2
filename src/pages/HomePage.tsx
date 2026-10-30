@@ -81,8 +81,54 @@ export const HomePage: React.FC<HomePageProps> = ({
             className="absolute inset-0 w-full h-full paisley-watermark-layer opacity-85 pointer-events-none"
           />
 
+          {/* Top Institutional & Host Brand Elements: HCIPAI (Left), GCET, NBA, NAAC (Right) as in Reference Banner */}
+          <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14 pt-2 sm:pt-4 z-10 shrink-0">
+            <div className="w-full flex items-center justify-between">
+              {/* Top Left: HCIPAI Logo */}
+              <div className="flex items-center">
+                <img
+                  src={siteConfig.assets.bannerHcipaiLogo || '/assets/aistudio/hcipailogo.png'}
+                  alt="HCIPAI Logo"
+                  width={1679}
+                  height={1641}
+                  loading="eager"
+                  fetchPriority="high"
+                  className="h-12 sm:h-16 lg:h-20 xl:h-22 w-auto object-contain mix-blend-multiply"
+                />
+              </div>
+
+              {/* Top Right: GCET, NBA, NAAC Logos */}
+              <div className="flex items-center gap-3 sm:gap-5 lg:gap-7">
+                <img
+                  src={siteConfig.assets.bannerGcetLogo || '/assets/aistudio/gcetlogo.png'}
+                  alt="Geethanjali College of Engineering and Technology Logo"
+                  width={169}
+                  height={169}
+                  loading="eager"
+                  className="h-10 sm:h-12 lg:h-16 w-auto object-contain mix-blend-multiply"
+                />
+                <img
+                  src={siteConfig.assets.bannerNbaLogo || '/assets/aistudio/nbalogo.png'}
+                  alt="National Board of Accreditation NBA Logo"
+                  width={250}
+                  height={198}
+                  loading="eager"
+                  className="h-9 sm:h-11 lg:h-14 w-auto object-contain mix-blend-multiply"
+                />
+                <img
+                  src={siteConfig.assets.bannerNaacLogo || '/assets/aistudio/naaclogo.png'}
+                  alt="National Assessment and Accreditation Council NAAC A+ Logo"
+                  width={174}
+                  height={174}
+                  loading="eager"
+                  className="h-10 sm:h-12 lg:h-16 w-auto object-contain mix-blend-multiply"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* Center Composition: Authentic 2027 HCIPAI Symposium Title & Theme Lockups */}
-          <div className="flex-1 flex items-center justify-center w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14 pb-20 sm:pb-28 lg:pb-32">
+          <div className="flex-1 flex items-center justify-center w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14 py-4 sm:py-6 lg:py-8 pb-10 sm:pb-16 lg:pb-20">
             <div className="w-full grid grid-cols-1 lg:grid-cols-12 items-center gap-8 lg:gap-12">
               {/* Left Lockup: 2027 HCIPAI MARCH 18th-19th SYMPOSIUM */}
               <div className="lg:col-span-7 flex justify-center lg:justify-start">

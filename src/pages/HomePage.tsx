@@ -197,7 +197,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             </div>
 
             <div className="flex flex-wrap items-center gap-3 shrink-0">
-              <a
+              {/* <a
                 href={registrationUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -205,7 +205,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               >
                 <span>Register Now</span>
                 <ExternalLink className="w-4 h-4" aria-hidden="true" />
-              </a>
+              </a> */}
 
               <a
                 href="/schedule"
@@ -428,7 +428,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
                 <div className="mt-6 pt-3 border-t border-[#dceaf8]/60 flex items-center justify-between text-xs text-[#505050]">
                   <span>HCIPAI Symposium 2027</span>
-                  <a
+                  {/* <a
                     href={registrationUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -436,7 +436,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   >
                     <span>Register</span>
                     <ExternalLink className="w-3 h-3" aria-hidden="true" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             ))}

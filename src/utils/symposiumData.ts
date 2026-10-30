@@ -80,9 +80,11 @@ export interface ScheduleSession {
   time: string;
   title: string;
   category: string;
+  track?: string;
   speaker: string;
-  venue: string;
-  status: string;
+  location?: string;
+  venue?: string;
+  status?: string;
   description: string;
 }
 
@@ -308,19 +310,24 @@ export function normalizeScheduleData(input: unknown): ScheduleData {
 
   const days: ScheduleDay[] = rawDays.map((day: any, dIdx: number) => {
     const sessions: ScheduleSession[] = Array.isArray(day?.sessions)
-      ? day.sessions.map((s: any, sIdx: number) => ({
-          id: cleanTextOrTba(s?.id, `day-${dIdx + 1}-s-${sIdx + 1}`),
-          time: cleanTextOrTba(s?.time, 'TBA'),
-          title: cleanTextOrTba(s?.title, 'Session Title TBA'),
-          category: cleanTextOrTba(s?.category, 'General'),
-          speaker: cleanTextOrTba(s?.speaker, 'TBA'),
-          venue: cleanTextOrTba(s?.venue, 'TBA'),
-          status: cleanTextOrTba(s?.status, 'TBA'),
-          description: cleanTextOrTba(
-            s?.description,
-            'Session details will be announced (TBA).'
-          ),
-        }))
+      ? day.sessions.map((s: any, sIdx: number) => {
+          const loc = cleanOptionalText(s?.location || s?.venue, '');
+          return {
+            id: cleanTextOrTba(s?.id, `day-${dIdx + 1}-s-${sIdx + 1}`),
+            time: cleanTextOrTba(s?.time, 'TBA'),
+            title: cleanTextOrTba(s?.title, 'Session Title TBA'),
+            category: cleanTextOrTba(s?.category, 'General'),
+            track: cleanOptionalText(s?.track, ''),
+            speaker: cleanTextOrTba(s?.speaker, 'TBA'),
+            location: loc.length > 0 ? loc : undefined,
+            venue: loc.length > 0 ? loc : undefined,
+            status: cleanOptionalText(s?.status, ''),
+            description: cleanTextOrTba(
+              s?.description,
+              'Session details will be announced (TBA).'
+            ),
+          };
+        })
       : [];
 
     return {

@@ -58,6 +58,10 @@ export interface SiteConfig {
     paisleyPattern: string;
     kolamLeft: string;
     kolamRight: string;
+    bannerHcipaiLogo?: string;
+    bannerGcetLogo?: string;
+    bannerNbaLogo?: string;
+    bannerNaacLogo?: string;
   };
   registrationFees: {
     heading: string;

@@ -147,9 +147,7 @@ export const SchedulePage: React.FC<SchedulePageProps> = ({
               <strong className="font-semibold text-[#010101]">
                 Program Note:
               </strong>{' '}
-              {scheduleData.lastUpdated}. Unannounced session timings, hall
-              allocations, and confirmed speakers are indicated as{' '}
-              <strong className="font-semibold text-[#6a4766]">TBA</strong>.
+              {scheduleData.lastUpdated}. Detailed session descriptions and confirmed speakers are updated as announced.
             </div>
             <a
               href={registrationUrl}
@@ -207,81 +205,82 @@ export const SchedulePage: React.FC<SchedulePageProps> = ({
                     </div>
                   ) : (
                     <div className="divide-y divide-[#dceaf8]">
-                      {filteredSessions.map((session) => (
-                        <article
-                          key={session.id}
-                          className="p-5 sm:p-7 hover:bg-[#f3f8fd]/35 transition-colors grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-start"
-                        >
-                          {/* Time & Status Column */}
-                          <div className="md:col-span-3 space-y-1">
-                            <div className="flex items-center gap-2 text-sm font-bold text-[#6a4766]">
-                              <Clock
-                                className="w-4 h-4 shrink-0 text-[#6a4766]"
-                                aria-hidden="true"
-                              />
-                              <span>Time: {session.time}</span>
-                            </div>
-                            <div className="text-xs text-[#505050] pl-6">
-                              <span>{session.category}</span>
-                              {day.id !== 'day-2' && session.status && (
-                                <>
-                                  <span aria-hidden="true"> · </span>
-                                  <span>Status: {session.status}</span>
-                                </>
+                      {filteredSessions.map((session) => {
+                        const sessionLocation = session.location || session.venue;
+                        const sessionTrack = session.track || session.tracks;
+
+                        return (
+                          <article
+                            key={session.id}
+                            className="p-5 sm:p-7 hover:bg-[#f3f8fd]/35 transition-colors grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-start"
+                          >
+                            {/* Time, Category & Location Column */}
+                            <div className="md:col-span-3 space-y-1.5">
+                              <div className="flex items-center gap-2 text-sm font-bold text-[#6a4766]">
+                                <Clock
+                                  className="w-4 h-4 shrink-0 text-[#6a4766]"
+                                  aria-hidden="true"
+                                />
+                                <span>Time: {session.time}</span>
+                              </div>
+                              <div className="text-xs text-[#505050] pl-6">
+                                <span>{session.category}</span>
+                              </div>
+                              {sessionLocation && sessionLocation.trim() !== '' && sessionLocation.trim().toUpperCase() !== 'TBA' && (
+                                <div className="flex items-start gap-1.5 text-xs text-[#1b75bb] pl-6 font-medium">
+                                  <MapPin
+                                    className="w-3.5 h-3.5 shrink-0 mt-0.5 text-[#1b75bb]"
+                                    aria-hidden="true"
+                                  />
+                                  <span>{sessionLocation}</span>
+                                </div>
                               )}
                             </div>
-                          </div>
 
-                          {/* Session Title & Description Column */}
-                          <div className="md:col-span-6 space-y-1.5">
-                            <h3 className="font-serif-display font-bold text-lg text-[#010101]">
-                              {session.title}
-                            </h3>
-                            {session.tracks && (
-                              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#e8f1fb] border border-[#c3d9f5] text-xs font-medium text-[#1b75bb]">
-                                <span className="text-[#505050] font-semibold">Track:</span>
-                                <span>{session.tracks}</span>
+                            {/* Session Title & Description Column */}
+                            <div
+                              className={`${
+                                session.speaker && session.speaker !== '—'
+                                  ? 'md:col-span-6'
+                                  : 'md:col-span-9'
+                              } space-y-2`}
+                            >
+                              <h3 className="font-serif-display font-bold text-lg text-[#010101]">
+                                {session.title}
+                              </h3>
+                              {sessionTrack && sessionTrack !== '—' && (
+                                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#e8f1fa] border border-[#cbe1f5] text-xs font-medium text-[#1b75bb]">
+                                  <span className="text-[#505050] font-semibold">Track:</span>
+                                  <span>{sessionTrack}</span>
+                                </div>
+                              )}
+                              <p className="text-sm text-[#4e4e4e] leading-relaxed">
+                                {session.description}
+                              </p>
+                            </div>
+
+                            {/* Speaker Column */}
+                            {session.speaker && session.speaker !== '—' && (
+                              <div className="md:col-span-3 space-y-1.5 text-xs sm:text-sm text-[#4e4e4e] md:border-l md:border-[#dceaf8] md:pl-5">
+                                <div className="flex items-start gap-2">
+                                  <User
+                                    className="w-4 h-4 text-[#1b75bb] shrink-0 mt-0.5"
+                                    aria-hidden="true"
+                                  />
+                                  <div>
+                                    <span className="text-xs text-[#505050] block">
+                                      Speaker / Lead
+                                    </span>
+                                    <span className="font-medium text-[#010101]">
+                                      {session.speaker}
+                                    </span>
+                                  </div>
+                                </div>
                               </div>
                             )}
-                            <div className="text-sm text-[#4e4e4e] leading-relaxed">
-                              <p>{session.description}</p>
-                            </div>
-                          </div>
-
-                          {/* Speaker & Venue Column */}
-                          <div className="md:col-span-3 space-y-1.5 text-xs sm:text-sm text-[#4e4e4e] md:border-l md:border-[#dceaf8] md:pl-5">
-                            <div className="flex items-start gap-2">
-                              <User
-                                className="w-4 h-4 text-[#1b75bb] shrink-0 mt-0.5"
-                                aria-hidden="true"
-                              />
-                              <div>
-                                <span className="text-xs text-[#505050] block">
-                                  Speaker / Lead
-                                </span>
-                                <span className="font-medium text-[#010101]">
-                                  {session.speaker}
-                                </span>
-                              </div>
-                            </div>
-
-                            <div className="flex items-start gap-2">
-                              <MapPin
-                                className="w-4 h-4 text-[#a355ba] shrink-0 mt-0.5"
-                                aria-hidden="true"
-                              />
-                              <div>
-                                <span className="text-xs text-[#505050] block">
-                                  Location
-                                </span>
-                                <span className="font-medium text-[#010101]">
-                                  {session.venue}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </article>
-                      ))}
+                          </article>
+                        );
+                      })}
                     </div>
                   )}
                 </div>

@@ -11,53 +11,114 @@
       "sessions": [
         {
           "id": "d1-s1",
-          "time": "TBA",
-          "title": "Registration & Welcome Assembly",
+          "time": "09:00 AM – 09:30 AM",
+          "title": "Registration & Welcome",
           "category": "General",
-          "speaker": "TBA",
-          "venue": "GCET Campus — Hall TBA",
-          "status": "TBA",
-          "description": "Participant check-in and welcome kit distribution at Geethanjali College of Engineering and Technology."
+          "track": "Common",
+          "speaker": "Organizing Committee / Volunteers",
+          "status": "Confirmed",
+          "location": "GCET Main Auditorium",
+          "description": "Participant check-in, registration validation, and welcome kit distribution."
         },
         {
           "id": "d1-s2",
-          "time": "TBA",
-          "title": "Symposium Inauguration & Keynote Address",
+          "time": "09:30 AM – 10:00 AM",
+          "title": "Inauguration & Opening Address",
           "category": "Keynote",
-          "speaker": "TBA",
-          "venue": "GCET Main Auditorium — TBA",
-          "status": "TBA",
-          "description": "Opening address introducing the HCIPAI Symposium 2027 theme: One Experience. Many Perspectives."
+          "track": "Common",
+          "speaker": "Dignitaries & Chief Guests",
+          "status": "Confirmed",
+          "description": "Formal inauguration of HCIPAI Symposium 2027, lamp lighting ceremony, and opening remarks."
         },
         {
           "id": "d1-s3",
-          "time": "TBA",
-          "title": "Panel Discussion I: HCI for Interactive & Immersive Experience",
-          "category": "Panel Discussions",
-          "speaker": "Panel Members — TBA",
-          "venue": "TBA",
-          "status": "TBA",
-          "description": "Multi-perspective dialogue on human-computer interaction, spatial computing, and immersive environments."
+          "time": "10:00 AM – 10:45 AM",
+          "title": "Keynote Address I – HCI and the Future of Human–Technology Interaction",
+          "category": "Keynote",
+          "track": "Common",
+          "speaker": "Keynote Speaker TBA",
+          "status": "Confirmed",
+          "description": "Foundational keynote exploring evolving paradigms in cognitive ergonomics, spatial computing, and the future of human-technology interaction."
         },
         {
           "id": "d1-s4",
-          "time": "TBA",
-          "title": "Hands-On Workshop Session I",
-          "category": "Workshops",
-          "speaker": "Workshop Facilitators — TBA",
-          "venue": "XR Research Lab / Workshop Hall — TBA",
-          "status": "TBA",
-          "description": "Interactive technical and design workshop session. Specific topic and prerequisites TBA."
+          "time": "10:45 AM – 11:00 AM",
+          "title": "Tea / Refreshment Break",
+          "category": "General",
+          "track": "—",
+          "speaker": "—",
+          "status": "Confirmed",
+          "description": "Morning tea, refreshments, and informal networking break."
         },
         {
           "id": "d1-s5",
-          "time": "TBA",
-          "title": "Interactive Zones & XR Research Lab Showcase",
+          "time": "11:00 AM – 11:45 AM",
+          "title": "Keynote Address II – Designing Interactive & Immersive Experiences",
+          "category": "Keynote",
+          "track": "Common",
+          "speaker": "Keynote Speaker TBA",
+          "status": "Confirmed",
+          "description": "In-depth keynote examining spatial computing, multimodal interaction patterns, and experiential design frameworks."
+        },
+        {
+          "id": "d1-s6",
+          "time": "11:45 AM – 12:30 PM",
+          "title": "Expert Talk – Emerging Trends in HCI, UI/UX & Immersive Technologies",
+          "category": "Keynote",
+          "track": "Common",
+          "speaker": "Invited Industry / Academic Expert",
+          "status": "Confirmed",
+          "description": "Expert insights on industry workflows, spatial UX, generative AI interfaces, and next-generation design systems."
+        },
+        {
+          "id": "d1-s7",
+          "time": "12:30 PM – 01:30 PM",
+          "title": "Lunch Break",
+          "category": "General",
+          "track": "—",
+          "speaker": "—",
+          "status": "Confirmed",
+          "description": "Networking lunch and delegate discussions."
+        },
+        {
+          "id": "d1-s8",
+          "time": "01:30 PM – 03:00 PM",
+          "title": "Workshop Session",
+          "category": "Workshops",
+          "track": "Track A: UI/UX & HCI | Track B: VR & Immersive Technologies",
+          "speaker": "Workshop Mentors & Leads",
+          "status": "Confirmed",
+          "description": "Parallel hands-on workshop tracks: Track A focusing on UI/UX research & HCI design systems; Track B focusing on Virtual Reality, spatial interaction & immersive technologies."
+        },
+        {
+          "id": "d1-s9",
+          "time": "03:00 PM – 03:15 PM",
+          "title": "Tea / Refreshment Break",
+          "category": "General",
+          "track": "—",
+          "speaker": "—",
+          "status": "Confirmed",
+          "description": "Afternoon refreshment break."
+        },
+        {
+          "id": "d1-s10",
+          "time": "03:15 PM – 05:00 PM",
+          "title": "Workshop Session",
+          "category": "Workshops",
+          "track": "Track A: UI/UX & HCI | Track B: VR & Immersive Technologies",
+          "speaker": "Workshop Mentors & Leads",
+          "status": "Confirmed",
+          "description": "Continuation of parallel hands-on workshops with guided project development, prototype construction, and review."
+        },
+        {
+          "id": "d1-s11",
+          "time": "04:00 PM – 05:30 PM",
+          "title": "Networking & Stall Exploration",
           "category": "Interactive Zones",
-          "speaker": "Demonstration Teams — TBA",
-          "venue": "Interactive Zone Arena — TBA",
-          "status": "TBA",
-          "description": "Live demonstrations, AR/VR prototypes, and experiential installations."
+          "track": "Exhibition, Demonstrations & Informal Interaction",
+          "speaker": "Student Teams & Project Exhibitors",
+          "status": "Confirmed",
+          "description": "Open exhibition walkthrough, project showcase booths, AR/VR prototype demonstrations, and collaborative networking."
         }
       ]
     },

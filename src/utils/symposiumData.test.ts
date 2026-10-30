@@ -59,7 +59,7 @@ test('normalizeScheduleData and filterSessionsByCategory preserve TBA placeholde
         label: 'Day 1',
         subtitle: 'Opening Day',
         sessions: [
-          { id: '1', title: 'Workshop A', category: 'Workshops', time: '', speaker: '' },
+          { id: '1', title: 'Workshop A', category: 'Workshops', time: '', speaker: '', location: 'Room 101' },
           { id: '2', title: 'Panel A', category: 'Panel Discussions', time: '10:00 AM', speaker: 'TBA' },
         ],
       },
@@ -68,6 +68,8 @@ test('normalizeScheduleData and filterSessionsByCategory preserve TBA placeholde
 
   assert.equal(schedule.days[0].sessions[0].time, 'TBA');
   assert.equal(schedule.days[0].sessions[0].speaker, 'TBA');
+  assert.equal(schedule.days[0].sessions[0].location, 'Room 101');
+  assert.equal(schedule.days[0].sessions[1].location, undefined);
 
   const workshopsOnly = filterSessionsByCategory(schedule.days[0].sessions, 'Workshops');
   assert.equal(workshopsOnly.length, 1);
